@@ -54,7 +54,8 @@ The goal is to identify key drivers of churn, segment at-risk users, and build a
 
   🤖 Machine Learning
   
-  A classification model was built to predict churn probability.
+  A classification model was built to predict churn probability:
+  
   •	Logistic Regression
   •	Accuracy: X
   •	Precision: X
@@ -73,6 +74,7 @@ Key predictors:
 📈 Dashboard
 
 The Power BI dashboard includes:
+
 •	Churn rate overview
 •	Customer segmentation
 •	Revenue analysis
