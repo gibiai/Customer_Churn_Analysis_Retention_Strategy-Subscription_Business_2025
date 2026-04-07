@@ -13,7 +13,8 @@ Understanding churn patterns can help the company:
 - Increase lifetime value (LTV)
 - Optimize retention strategies
 
-- ## 🎯 Business Questions
+- ##
+🎯 Business Questions
 
 1. Which customers are most likely to churn?
 2. What factors (usage, pricing, engagement) drive churn?
@@ -32,18 +33,18 @@ The goal is to identify key drivers of churn, segment at-risk users, and build a
 ##
 
 🛠 Tools
-	•	Python (Pandas, NumPy, Scikit-learn)
-	•	Power BI (DAX, Power Query)
-	•	SQL
-	•	Data Visualization (Matplotlib, Seaborn)
+- Python (Pandas, NumPy, Scikit-learn)
+- Power BI (DAX, Power Query)
+- SQL
+- Data Visualization (Matplotlib, Seaborn)
 
 ##
 
   📊 Key Insights
-	•	Low engagement is the strongest churn driver
-	•	Inactive users show high churn probability
-	•	Certain pricing plans increase churn risk
-	•	High-value customers can still churn
+  1. Low engagement is the strongest churn driver
+  2. Inactive users show high churn probability
+  3. Certain pricing plans increase churn risk
+  4. High-value customers can still churn
 
 ##
 
@@ -58,9 +59,9 @@ A classification model was built to predict churn probability.
 ##
 
 Key predictors:
-	•	Engagement level
-	•	Last activity
-	•	Subscription type
+- Engagement level
+- Last activity
+- Subscription type
 ##
 
 
