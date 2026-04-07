@@ -19,3 +19,44 @@ Understanding churn patterns can help the company:
 2. What factors (usage, pricing, engagement) drive churn?
 3. Are high-value customers at risk of leaving?
 4. Can we predict churn probability using customer data?
+
+📌 Customer Churn Analysis – SaaS (2025)
+
+📖 Project Overview
+
+This project analyzes customer churn in a subscription-based SaaS company.
+
+The goal is to identify key drivers of churn, segment at-risk users, and build a predictive model to support retention strategies.
+
+🛠 Tools
+	•	Python (Pandas, NumPy, Scikit-learn)
+	•	Power BI (DAX, Power Query)
+	•	SQL
+	•	Data Visualization (Matplotlib, Seaborn)
+
+  📊 Key Insights
+	•	Low engagement is the strongest churn driver
+	•	Inactive users show high churn probability
+	•	Certain pricing plans increase churn risk
+	•	High-value customers can still churn
+
+  🤖 Machine Learning
+
+A classification model was built to predict churn probability.
+	•	Logistic Regression
+	•	Accuracy: X
+	•	Precision: X
+	•	Recall: X
+
+Key predictors:
+	•	Engagement level
+	•	Last activity
+	•	Subscription type
+
+📈 Dashboard
+
+The Power BI dashboard includes:
+	•	Churn rate overview
+	•	Customer segmentation
+	•	Revenue analysis
+	•	Risk identification
