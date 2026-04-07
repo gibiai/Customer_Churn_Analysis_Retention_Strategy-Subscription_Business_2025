@@ -2,7 +2,8 @@
   <img src="assets/customer_churn_banner.svg" alt="AI Jobs Market Analysis" width="100%"/>
 </div>
 
-## 📊 Business Context
+## 
+📊 Business Context
 
 A subscription-based SaaS company is experiencing customer churn and wants to improve retention.
 
@@ -13,7 +14,8 @@ Understanding churn patterns can help the company:
 - Increase lifetime value (LTV)
 - Optimize retention strategies
 
-- ##
+##
+
 🎯 Business Questions
 
 1. Which customers are most likely to churn?
@@ -33,6 +35,7 @@ The goal is to identify key drivers of churn, segment at-risk users, and build a
 ##
 
 🛠 Tools
+
 - Python (Pandas, NumPy, Scikit-learn)
 - Power BI (DAX, Power Query)
 - SQL
@@ -41,6 +44,7 @@ The goal is to identify key drivers of churn, segment at-risk users, and build a
 ##
 
   📊 Key Insights
+  
   1. Low engagement is the strongest churn driver
   2. Inactive users show high churn probability
   3. Certain pricing plans increase churn risk
@@ -49,26 +53,27 @@ The goal is to identify key drivers of churn, segment at-risk users, and build a
 ##
 
   🤖 Machine Learning
-
-A classification model was built to predict churn probability.
-	•	Logistic Regression
-	•	Accuracy: X
-	•	Precision: X
-	•	Recall: X
+  
+  A classification model was built to predict churn probability.
+  •	Logistic Regression
+  •	Accuracy: X
+  •	Precision: X
+  •	Recall: X
 
 ##
 
 Key predictors:
+
 - Engagement level
 - Last activity
 - Subscription type
-##
 
+##
 
 📈 Dashboard
 
 The Power BI dashboard includes:
-	•	Churn rate overview
-	•	Customer segmentation
-	•	Revenue analysis
-	•	Risk identification
+•	Churn rate overview
+•	Customer segmentation
+•	Revenue analysis
+•	Risk identification
