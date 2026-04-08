@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/logo00.png" alt="Customer Churn Analysis" width="60%"/>
+  <img src="assets/logo00.png" alt="Customer Churn Analysis" width="50%"/>
 </div>
 
 ## 
