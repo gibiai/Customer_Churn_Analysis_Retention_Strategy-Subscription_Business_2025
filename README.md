@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/customer_churn_banner.svg" alt="AI Jobs Market Analysis" width="100%"/>
+  <img src="assets/logo00.png" alt="Customer Churn Analysis" width="60%"/>
 </div>
 
 ## 
