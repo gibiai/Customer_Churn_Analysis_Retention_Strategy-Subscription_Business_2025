@@ -1,67 +1,172 @@
-<div align="center">
-  <img src="assets/logo00.png" alt="Customer Churn Analysis" width="50%"/>
-</div>
+# 📊 SaaS Customer Churn Analysis & Retention Strategy (2025)
 
-## 
-📊 Business Context
+## 📌 Project Overview
+An end-to-end SaaS churn analytics project designed to uncover behavioral churn drivers, segment customer risk, and support retention-focused business strategy.
 
-A subscription-based SaaS company is experiencing customer churn and wants to improve retention.
+This project simulates the work of a Junior Data Analyst operating across:
+- Data Cleaning & Transformation
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Churn Prediction
+- Customer Segmentation
+- Power BI Dashboard Development
 
-The goal of this project is to analyze customer behavior, identify churn drivers, and build a predictive model to detect at-risk users.
+---
 
-Understanding churn patterns can help the company:
-- Reduce customer loss
-- Increase lifetime value (LTV)
-- Optimize retention strategies
+# 🎯 Business Objective
+Subscription businesses often lose revenue through preventable churn.  
+The goal of this project was to identify:
 
-##
+✔ Which customers are most likely to churn  
+✔ Which operational factors drive churn  
+✔ Which high-value accounts require proactive retention  
+✔ How data can support strategic intervention
 
-🎯 Business Questions
+---
 
-1. Which customers are most likely to churn?
-2. What factors (usage, pricing, engagement) drive churn?
-3. Are high-value customers at risk of leaving?
-4. Can we predict churn probability using customer data?
+# 🗂 Dataset Structure
+The project integrates multiple relational SaaS datasets:
 
-##
-📌 Customer Churn Analysis – SaaS (2025)
+### Core Tables:
+- **accounts.csv** → Customer profile, seats, plan tier, churn flag  
+- **subscriptions.csv** → Subscription lifecycle, billing, upgrades/downgrades  
+- **feature_usage.csv** → Product engagement and behavioral activity  
+- **support_tickets.csv** → Support burden, satisfaction, escalation  
+- **churn_events.csv** → Churn timing, reactivation, cancellation reasons  
 
-📖 Project Overview
+### Scale:
+- Multi-table relational schema  
+- Account-level aggregation  
+- Behavioral + operational + retention features  
 
-This project analyzes customer churn in a subscription-based SaaS company.
+---
 
-The goal is to identify key drivers of churn, segment at-risk users, and build a predictive model to support retention strategies.
+# ⚙️ Project Workflow
 
-##
+## 📓 Notebook 1 — Data Preparation & EDA
+### Key Tasks:
+- Merged multi-source SaaS datasets  
+- Resolved schema granularity issues (subscription → account level)  
+- Cleaned missing values and inconsistencies  
+- Engineered business features:
+  - `inactive`
+  - `high_value`
+  - `low_satisfaction`
+  - `support_heavy`
+- Conducted exploratory analysis:
+  - Churn distribution
+  - Usage vs churn
+  - Satisfaction vs churn
+  - Correlation heatmap
 
-🛠 Tools
+### Key Findings:
+- Low product engagement strongly correlates with churn  
+- Inactive customers churn significantly more  
+- Support-heavy customers show elevated churn risk  
+- Customer satisfaction outperforms account size as a churn indicator  
 
-- Python (Pandas, NumPy, Scikit-learn)
-- Power BI (DAX, Power Query)
-- SQL
-- Data Visualization (Matplotlib, Seaborn)
+---
 
-##
+## 📓 Notebook 2 — Churn Prediction & Retention Strategy
+### Key Tasks:
+- Built churn KPI framework  
+- Created `risk_segment` (High Risk / Low Risk)  
+- Logistic Regression model for churn prediction  
+- Feature importance analysis  
+- Strategic segmentation for business action  
 
-  📊 Key Insights
-  
-  1. Low engagement is the strongest churn driver
-  2. Inactive users show high churn probability
-  3. Certain pricing plans increase churn risk
-  4. High-value customers can still churn
+### Model Focus:
+**Behavior > Static Profile**
 
-##
+Primary churn drivers:
+- Inactivity  
+- Satisfaction decline  
+- Support escalation  
+- Usage reduction  
 
-  🤖 Machine Learning
-  
-  A classification model was built to predict churn probability:
-  
-  •	Logistic Regression
-  •	Accuracy: X
-  •	Precision: X
-  •	Recall: X
+---
 
-##
+# 📊 Power BI Dashboard (!WIP!)
+A recruiter-ready interactive dashboard built to translate analysis into business decisions.
+
+## Dashboard Pages:
+### 1️⃣ Executive Overview
+- Churn Rate
+- Avg Usage
+- Avg Satisfaction
+- Churn by Plan Tier
+- Geographic distribution
+
+### 2️⃣ Behavioral Risk Analysis
+- Usage vs Satisfaction Scatter
+- Support Load
+- Escalation Impact
+- High-Risk Segments
+
+### 3️⃣ Retention Opportunities
+- High-Value Accounts at Risk
+- Segment Prioritization
+- Account-level intervention targeting
+
+---
+
+# 🧠 Strategic Insights
+## Core Business Conclusion:
+**Behavioral decline is a stronger churn predictor than customer size alone.**
+
+### Practical Implications:
+- Prioritize inactive high-value accounts  
+- Reduce churn through customer success intervention  
+- Monitor support burden as an early warning signal  
+- Use segmentation for retention campaigns  
+
+---
+
+# 🛠 Tech Stack
+### Data Analysis:
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+
+### BI & Reporting:
+- Power BI
+- DAX
+- Power Query
+
+### Workflow:
+- Jupyter Notebook
+- GitHub
+
+---
+
+# 📈 Portfolio Value
+This project demonstrates:
+✔ Relational data integration  
+✔ Data storytelling  
+✔ Predictive analytics  
+✔ Business intelligence  
+✔ Dashboard design  
+✔ Stakeholder-oriented problem solving  
+
+---
+
+# 🚀 Future Improvements
+- Random Forest / XGBoost churn prediction  
+- Cohort retention analysis  
+- Customer Lifetime Value (CLV) forecasting  
+- Revenue-at-risk modeling  
+- Automated retention scoring  
+
+---
+
+# 👤 Author
+**Gabriele De Carlo**  
+Junior Data Analyst | Python | SQL | Power BI | Predictive Analytics
+
+---
 
 Key predictors:
 
@@ -73,7 +178,7 @@ Key predictors:
 
 📈 Dashboard
 
-The Power BI dashboard includes:
+The Power BI dashboard includes:](https://www.bancaditalia.it/pubblicazioni/qef/2021-0661/index.html?utm_source=chatgpt.com)
 
 •	Churn rate overview
 •	Customer segmentation
