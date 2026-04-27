@@ -171,20 +171,3 @@ This project demonstrates:
 Junior Data Analyst | Python | SQL | Power BI | Predictive Analytics
 
 ---
-
-Key predictors:
-
-- Engagement level
-- Last activity
-- Subscription type
-
-##
-
-📈 Dashboard
-
-The Power BI dashboard includes:](https://www.bancaditalia.it/pubblicazioni/qef/2021-0661/index.html?utm_source=chatgpt.com)
-
-•	Churn rate overview
-•	Customer segmentation
-•	Revenue analysis
-•	Risk identification
