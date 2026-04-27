@@ -41,10 +41,10 @@ To run this project, simply create an environment and install the requirements. 
 2. **Install everything necessary:**
     ```bash
     pip install -r requirements.txt
-3. **Open the project:
-  ```bash
+3. **Open the project:**
+    ```bash
     jupyter notebook
-   
+
 ---
 
 # 🗂 Dataset Structure
