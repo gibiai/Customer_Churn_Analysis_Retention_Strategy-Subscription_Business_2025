@@ -91,7 +91,6 @@ Primary churn drivers:
 ---
 
 # 📊 Power BI Dashboard (!WIP!)
-A recruiter-ready interactive dashboard built to translate analysis into business decisions.
 
 ## Dashboard Pages:
 ### 1️⃣ Executive Overview
