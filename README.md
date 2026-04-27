@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/logo00.png" alt="AI Jobs Market Analysis" width="60%"/>
+  <img src="assets/logo00.png" alt="AI Jobs Market Analysis" width="55%"/>
 </div>
 
 # 📊 SaaS Customer Churn Analysis & Retention Strategy (2025)
