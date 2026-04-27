@@ -38,9 +38,12 @@ To run this project, simply create an environment and install the requirements. 
    venv\Scripts\activate
    # Mac/Linux:
    source venv/bin/activate
-2. **install everything necessary:**
+2. **Install everything necessary:**
     ```bash
     pip install -r requirements.txt
+3. **Open the project:
+  ```bash
+    jupyter notebook
    
 ---
 
