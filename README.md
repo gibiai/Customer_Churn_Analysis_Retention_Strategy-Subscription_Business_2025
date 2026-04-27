@@ -28,6 +28,22 @@ The goal of this project was to identify:
 
 ---
 
+# ⚙️ Quick Setup
+To run this project, simply create an environment and install the requirements. All dependencies, including **Jupyter**, are listed in the `requirements.txt` file.
+
+1. **Create and activate your environment:**
+   ```bash
+   python -m venv venv
+   # Windows:
+   venv\Scripts\activate
+   # Mac/Linux:
+   source venv/bin/activate
+2. **install everything necessary:**
+    ```bash
+    pip install -r requirements.txt
+   
+---
+
 # 🗂 Dataset Structure
 The project integrates multiple relational SaaS datasets:
 
@@ -45,7 +61,7 @@ The project integrates multiple relational SaaS datasets:
 
 ---
 
-# ⚙️ Project Workflow
+# 💾 Project Workflow
 
 ## 📓 Notebook 1 — Data Preparation & EDA
 ### Key Tasks:
@@ -142,17 +158,6 @@ Primary churn drivers:
 ### Workflow:
 - Jupyter Notebook
 - GitHub
-
----
-
-# 📈 Portfolio Value
-This project demonstrates:
-✔ Relational data integration  
-✔ Data storytelling  
-✔ Predictive analytics  
-✔ Business intelligence  
-✔ Dashboard design  
-✔ Stakeholder-oriented problem solving  
 
 ---
 
