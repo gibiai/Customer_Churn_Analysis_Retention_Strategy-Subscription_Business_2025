@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="assets/customer_churn_banner.svg" alt="AI Jobs Market Analysis" width="100%"/>
+</div>
+
 # 📊 SaaS Customer Churn Analysis & Retention Strategy (2025)
 
 ## 📌 Project Overview
