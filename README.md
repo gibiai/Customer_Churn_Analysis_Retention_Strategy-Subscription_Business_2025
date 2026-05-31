@@ -106,11 +106,11 @@ jupyter>=1.0
 
 ## Notebooks
 
-| Notebook | Description |
-|----------|-------------|
-| [01 — EDA & Data Cleaning](notebooks/01_EDA_and_Data_Cleaning.ipynb) | Multi-table merge, feature engineering, exploratory analysis |
-| [02 — Churn Prediction & Strategy](notebooks/02_Churn_Prediction_and_Strategy.ipynb) | Logistic Regression, risk segmentation, KPI framework |
-| [03 — Advanced Models & CLV](notebooks/03_Advanced_Models.ipynb) | Random Forest, churn probability scores, CLV, retention targeting matrix |
+| Notebook | Description | |
+|----------|-------------|---|
+| 01 — EDA & Data Cleaning | Multi-table merge, feature engineering, exploratory analysis | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1GmSHNLALewnE6MDaAGtfdJXQsNMelqoS#scrollTo=7cd949da) |
+| 02 — Churn Prediction & Strategy | Logistic Regression, risk segmentation, KPI framework | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/15BXD4qItIidzYHXTXGKSj_1kO2XhIWv5) |
+| 03 — Advanced Models & CLV | Random Forest, churn probability scores, CLV, retention targeting matrix | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1b-Uufo_CzdIVmY0rxd4-BWkPc9J3oEDF) |
 
 ---
 
@@ -159,3 +159,4 @@ Interactive dashboard across 3 pages: Churn Overview · Behavioral Risk Analysis
 ## Author
 
 **Gabriele De Carlo** — Data Analyst Portfolio Project, 2025
+
