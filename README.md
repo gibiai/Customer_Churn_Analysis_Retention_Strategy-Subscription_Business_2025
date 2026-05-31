@@ -15,151 +15,147 @@ This project simulates the work of a Junior Data Analyst operating across:
 - Customer Segmentation
 - Power BI Dashboard Development
 
----
+### Behavioral Churn Prediction · Customer Segmentation · CLV Estimation
 
-# 🎯 Business Objective
-Subscription businesses often lose revenue through preventable churn.  
-The goal of this project was to identify:
-
-✔ Which customers are most likely to churn  
-✔ Which operational factors drive churn  
-✔ Which high-value accounts require proactive retention  
-✔ How data can support strategic intervention
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-red.svg)](https://scikit-learn.org)
+[![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow?logo=powerbi)](https://app.powerbi.com/view?r=eyJrIjoiZWU3MTRiOTYtZjk2OS00NDAwLThmYTctNzgzNWY0MjI5Zjc0IiwidCI6IjFmNTRhMThlLTg0MjUtNDdiYi1hMDk3LTczODg2ZTM1MTE4YSIsImMiOjh9&pageName=c954228bb7088ab4c0e0)
+[![Status](https://img.shields.io/badge/Status-Complete-success.svg)]()
 
 ---
 
-# ⚙️ Quick Setup
-To run this project, simply create an environment and install the requirements. All dependencies, including **Jupyter**, are listed in the `requirements.txt` file.
+## Description
 
-1. **Create and activate your environment:**
-   ```bash
-   python -m venv venv
-   # Windows:
-   venv\Scripts\activate
-   # Mac/Linux:
-   source venv/bin/activate
-2. **Install everything necessary:**
-    ```bash
-    pip install -r requirements.txt
-3. **Open the project:**
-    ```bash
-    jupyter notebook
+End-to-end SaaS churn analytics project built to uncover behavioral churn drivers, segment customer risk, and support data-driven retention strategy. The pipeline merges 5 relational datasets, engineers business features, builds a Random Forest classifier, estimates Customer Lifetime Value, and exports a prioritized retention targeting matrix for Power BI. Key finding: customer satisfaction and product inactivity are stronger churn predictors than account size or plan tier.
 
 ---
 
-# 🗂 Dataset Structure
-The project integrates multiple relational SaaS datasets:
+## Project Structure
 
-### Core Tables:
-- **accounts.csv** → Customer profile, seats, plan tier, churn flag  
-- **subscriptions.csv** → Subscription lifecycle, billing, upgrades/downgrades  
-- **feature_usage.csv** → Product engagement and behavioral activity  
-- **support_tickets.csv** → Support burden, satisfaction, escalation  
-- **churn_events.csv** → Churn timing, reactivation, cancellation reasons  
-
-### Scale:
-- Multi-table relational schema  
-- Account-level aggregation  
-- Behavioral + operational + retention features  
-
----
-
-# 💾 Project Workflow
-
-## 📓 Notebook 1 — Data Preparation & EDA
-### Key Tasks:
-- Merged multi-source SaaS datasets  
-- Resolved schema granularity issues (subscription → account level)  
-- Cleaned missing values and inconsistencies  
-- Engineered business features:
-  - `inactive`
-  - `high_value`
-  - `low_satisfaction`
-  - `support_heavy`
-- Conducted exploratory analysis:
-  - Churn distribution
-  - Usage vs churn
-  - Satisfaction vs churn
-  - Correlation heatmap
-
-### Key Findings:
-- Low product engagement strongly correlates with churn  
-- Inactive customers churn significantly more  
-- Support-heavy customers show elevated churn risk  
-- Customer satisfaction outperforms account size as a churn indicator  
+```
+Customer_Churn_Analysis/
+│
+├── dataset/
+│   ├── accounts.csv                    # customer profiles (500 accounts)
+│   ├── subscriptions.csv               # subscription lifecycle (5,000 rows)
+│   ├── feature_usage.csv               # product engagement logs (25,000 rows)
+│   ├── support_tickets.csv             # support history (2,000 rows)
+│   ├── churn_events.csv                # churn timing and reasons (600 rows)
+│   ├── final_dataset.csv               # merged & cleaned (Notebook 1 output)
+│   ├── final_dataset_segmented.csv     # with risk segments (Notebook 2 output)
+│   └── final_dataset_advanced.csv      # with CLV & churn probability (Notebook 3 output)
+│
+├── notebooks/
+│   ├── 01_EDA_and_Data_Cleaning.ipynb          # data prep, feature engineering, EDA
+│   ├── 02_Churn_Prediction_and_Strategy.ipynb  # Logistic Regression, segmentation
+│   └── 03_Advanced_Models.ipynb                # Random Forest, CLV, targeting matrix
+│
+├── assets/
+├── requirements.txt
+└── .gitignore
+```
 
 ---
 
-## 📓 Notebook 2 — Churn Prediction & Retention Strategy
-### Key Tasks:
-- Built churn KPI framework  
-- Created `risk_segment` (High Risk / Low Risk)  
-- Logistic Regression model for churn prediction  
-- Feature importance analysis  
-- Strategic segmentation for business action  
+## Quick Setup
 
-### Model Focus:
-**Behavior > Static Profile**
+```bash
+git clone https://github.com/gibiai/Customer_Churn_Analysis_Retention_Strategy-Subscription_Business_2025.git
+cd Customer_Churn_Analysis_Retention_Strategy-Subscription_Business_2025
+```
 
-Primary churn drivers:
-- Inactivity  
-- Satisfaction decline  
-- Support escalation  
-- Usage reduction  
+```bash
+pip install -r requirements.txt
+```
+
+```bash
+jupyter notebook
+```
+
+Run notebooks in order: `01` → `02` → `03`
+
+---
+
+## Dependencies
+
+```
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
+seaborn>=0.12
+scikit-learn>=1.3
+jupyter>=1.0
+```
+
+---
+
+## Dataset Structure
+
+5 relational tables merged on `account_id`:
+
+| Table | Rows | Description |
+|-------|------|-------------|
+| `accounts.csv` | 500 | Customer profiles, plan tier, seats, churn flag |
+| `subscriptions.csv` | 5,000 | Subscription lifecycle, billing, upgrades |
+| `feature_usage.csv` | 25,000 | Product engagement and activity logs |
+| `support_tickets.csv` | 2,000 | Support burden, satisfaction, escalations |
+| `churn_events.csv` | 600 | Churn timing, reasons, reactivation |
+
+---
+
+## Notebooks
+
+| Notebook | Description |
+|----------|-------------|
+| [01 — EDA & Data Cleaning](notebooks/01_EDA_and_Data_Cleaning.ipynb) | Multi-table merge, feature engineering, exploratory analysis |
+| [02 — Churn Prediction & Strategy](notebooks/02_Churn_Prediction_and_Strategy.ipynb) | Logistic Regression, risk segmentation, KPI framework |
+| [03 — Advanced Models & CLV](notebooks/03_Advanced_Models.ipynb) | Random Forest, churn probability scores, CLV, retention targeting matrix |
+
+---
+
+## Key Findings
+
+| Finding | Value |
+|---------|-------|
+| **Churn rate** | 70% — high, driven by behavioral decline |
+| **Top churn driver** | `avg_satisfaction` — strongest predictor |
+| **Second driver** | `total_usage` — low engagement = high risk |
+| **High value at risk** | High-CLV accounts with churn probability > 0.7 |
+| **Random Forest vs LR** | RF outperforms on all metrics, especially recall |
+| **Key insight** | Behavioral signals outperform static account size |
+
+---
+
+## Techniques Used
+
+| Area | Techniques |
+|------|-----------|
+| **Python** | Pandas, NumPy, multi-table merge, feature engineering |
+| **Machine Learning** | Logistic Regression, Random Forest, predict_proba, feature importance |
+| **Metrics** | Accuracy, Precision, Recall, F1, ROC-AUC, Confusion Matrix |
+| **Business Analytics** | CLV estimation, retention targeting matrix, risk segmentation |
+| **Visualization** | Matplotlib, Seaborn, scatter matrix, heatmap |
 
 ---
 
 ## 📊 Power BI Dashboard
-The interactive dashboard allows you to explore these results dynamically:
 
-**Interactive Dashboard:**
-[![Power BI](https://img.shields.io/badge/Power%20BI-View%20Dashboard-yellow?logo=powerbi)](https://app.powerbi.com/view?r=eyJrIjoiZWU3MTRiOTYtZjk2OS00NDAwLThmYTctNzgzNWY0MjI5Zjc0IiwidCI6IjFmNTRhMThlLTg0MjUtNDdiYi1hMDk3LTczODg2ZTM1MTE4YSIsImMiOjh9&pageName=c954228bb7088ab4c0e0)
-<sup>↗️ *Ctrl+click to open in a new tab*</sup>
+Interactive dashboard across 3 pages: Churn Overview · Behavioral Risk Analysis · Retention Targeting
 
----
-
-# 🧠 Strategic Insights
-## Core Business Conclusion:
-**Behavioral decline is a stronger churn predictor than customer size alone.**
-
-### Practical Implications:
-- Prioritize inactive high-value accounts  
-- Reduce churn through customer success intervention  
-- Monitor support burden as an early warning signal  
-- Use segmentation for retention campaigns  
+**Interactive Dashboard:** [![Power BI](https://img.shields.io/badge/Power%20BI-View%20Dashboard-yellow?logo=powerbi)](https://app.powerbi.com/view?r=eyJrIjoiZWU3MTRiOTYtZjk2OS00NDAwLThmYTctNzgzNWY0MjI5Zjc0IiwidCI6IjFmNTRhMThlLTg0MjUtNDdiYi1hMDk3LTczODg2ZTM1MTE4YSIsImMiOjh9&pageName=c954228bb7088ab4c0e0) ↗️ *Ctrl+click to open in a new tab*
 
 ---
 
-# 🛠 Tech Stack
-### Data Analysis:
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
+## Future Improvements
 
-### BI & Reporting:
-- Power BI
-- DAX
-- Power Query
-
-### Workflow:
-- Jupyter Notebook
-- GitHub
+- XGBoost / LightGBM for improved prediction accuracy
+- Cohort retention analysis over time
+- Automated churn alert system
+- Revenue-at-risk modeling with real billing data
 
 ---
 
-# 🚀 Future Improvements
-- Random Forest / XGBoost churn prediction  
-- Cohort retention analysis  
-- Customer Lifetime Value (CLV) forecasting  
-- Revenue-at-risk modeling  
-- Automated retention scoring  
+## Author
 
----
-
-# 👤 Author
-**Gabriele De Carlo**  
-Junior Data Analyst | Python | SQL | Power BI | Predictive Analytics
-
----
+**Gabriele De Carlo** — Data Analyst Portfolio Project, 2025
