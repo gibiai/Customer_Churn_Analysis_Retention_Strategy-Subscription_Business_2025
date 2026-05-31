@@ -109,26 +109,12 @@ Primary churn drivers:
 
 ---
 
-# 📊 Power BI Dashboard (!WIP!)
+## 📊 Power BI Dashboard
+The interactive dashboard allows you to explore these results dynamically:
 
-## Dashboard Pages:
-### 1️⃣ Executive Overview
-- Churn Rate
-- Avg Usage
-- Avg Satisfaction
-- Churn by Plan Tier
-- Geographic distribution
-
-### 2️⃣ Behavioral Risk Analysis
-- Usage vs Satisfaction Scatter
-- Support Load
-- Escalation Impact
-- High-Risk Segments
-
-### 3️⃣ Retention Opportunities
-- High-Value Accounts at Risk
-- Segment Prioritization
-- Account-level intervention targeting
+**Interactive Dashboard:**
+[![Power BI](https://img.shields.io/badge/Power%20BI-View%20Dashboard-yellow?logo=powerbi)](https://app.powerbi.com/view?r=eyJrIjoiZWU3MTRiOTYtZjk2OS00NDAwLThmYTctNzgzNWY0MjI5Zjc0IiwidCI6IjFmNTRhMThlLTg0MjUtNDdiYi1hMDk3LTczODg2ZTM1MTE4YSIsImMiOjh9)
+<sup>↗️ *Ctrl+click to open in a new tab*</sup>
 
 ---
 
@@ -151,7 +137,6 @@ Primary churn drivers:
 - NumPy
 - Matplotlib
 - Seaborn
-- Scikit-learn
 
 ### BI & Reporting:
 - Power BI
