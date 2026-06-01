@@ -143,7 +143,7 @@ jupyter>=1.0
 
 Interactive dashboard across 3 pages: Churn Overview · Behavioral Risk Analysis · Retention Targeting
 
-**Interactive Dashboard:** [![Power BI](https://img.shields.io/badge/Power%20BI-View%20Dashboard-yellow?logo=powerbi)](https://app.powerbi.com/view?r=eyJrIjoiZWU3MTRiOTYtZjk2OS00NDAwLThmYTctNzgzNWY0MjI5Zjc0IiwidCI6IjFmNTRhMThlLTg0MjUtNDdiYi1hMDk3LTczODg2ZTM1MTE4YSIsImMiOjh9&pageName=c954228bb7088ab4c0e0) ↗️ *Ctrl+click to open in a new tab*
+**Interactive Dashboard:** [![Power BI](https://img.shields.io/badge/Power%20BI-View%20Dashboard-yellow?logo=powerbi)](https://app.powerbi.com/view?r=eyJrIjoiMDg3NzA3NjUtNDMwMC00NjdlLWEwNWItOTNiNGQzNjZlYzA4IiwidCI6IjFmNTRhMThlLTg0MjUtNDdiYi1hMDk3LTczODg2ZTM1MTE4YSIsImMiOjh9&pageName=c7c98034ea1c684f28b1) ↗️ *Ctrl+click to open in a new tab*
 
 ---
 
