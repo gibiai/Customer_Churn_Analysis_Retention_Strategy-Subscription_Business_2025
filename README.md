@@ -19,7 +19,7 @@
 
 An end-to-end SaaS churn analytics project: it integrates five relational tables, engineers behavioral features, predicts churn risk, estimates customer lifetime value, and turns the results into a retention-targeting strategy and an interactive Power BI dashboard.
 
-The focus is the **full analytical cycle** — from messy multi-table data to a business-ready retention framework — rather than a single high-accuracy model.
+The focus is the **full analytical cycle** — from messy multi-table data to a business-ready retention framework, rather than a single high-accuracy model.
 
 ---
 
@@ -46,7 +46,7 @@ Five relational SaaS tables (synthetic, 500 accounts), merged to account level:
 | `support_tickets.csv` | Support burden, satisfaction, escalations |
 | `churn_events.csv` | Churn timing and cancellation reasons |
 
-> Note: synthetic dataset. The data is well-suited for demonstrating the full pipeline; as is common with synthetic data, the predictive signal is limited — discussed honestly in the results below.
+> Note: synthetic dataset. The data is well-suited for demonstrating the full pipeline; as is common with synthetic data, the predictive signal is limited, discussed honestly in the results below.
 
 ---
 
@@ -89,11 +89,11 @@ Two models were compared on the same 80/20 split:
 | F1 | 0.80 | 0.76 |
 | ROC-AUC | 0.51 | 0.42 |
 
-**Honest interpretation:** the ROC-AUC values are close to 0.5, which means the models do **not** separate churners from non-churners much better than chance on this data. The high recall of the Logistic Regression is misleading — with a 70% churn base rate, predicting "churn" for almost everyone yields high recall but little real discrimination.
+**Honest interpretation:** the ROC-AUC values are close to 0.5, which means the models do **not** separate churners from non-churners much better than chance on this data. The high recall of the Logistic Regression is misleading with a 70% churn base rate, predicting "churn" for almost everyone yields high recall but little real discrimination.
 
-The most likely reason is the **synthetic nature of the dataset**: the engineered features don't carry a strong real signal for churn. This is itself a finding — it shows the importance of validating whether the data actually supports prediction, rather than trusting metrics at face value.
+The most likely reason is the **synthetic nature of the dataset**: the engineered features don't carry a strong real signal for churn. This is itself a finding, it shows the importance of validating whether the data actually supports prediction, rather than trusting metrics at face value.
 
-**What remains valuable** is the full pipeline: the five-table integration, the feature engineering, the CLV and revenue-at-risk framework, and the retention-targeting matrix — all of which would apply directly to a real dataset with genuine signal.
+**What remains valuable** is the full pipeline: the five-table integration, the feature engineering, the CLV and revenue-at-risk framework, and the retention-targeting matrix, all of which would apply directly to a real dataset with genuine signal.
 
 ### Feature Importance (Random Forest)
 | Feature | Importance |
@@ -146,6 +146,6 @@ Interactive dashboard across 3 pages: Churn Overview · Behavioral Risk Analysis
 
 ## 👤 Author
 
-**Gabriele De Carlo** — · Python · SQL · Power BI — Data Analyst Portfolio Project, 2025
+**Gabriele De Carlo** · Python · SQL · Power BI — Data Analyst Portfolio Project, 2025
 
 
