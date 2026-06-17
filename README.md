@@ -2,6 +2,7 @@
   <img src="assets/logo00.png" alt="AI Jobs Market Analysis" width="55%"/>
 </div>
 
+---
 
 📊 SaaS Customer Churn Analysis & Retention Strategy
 
